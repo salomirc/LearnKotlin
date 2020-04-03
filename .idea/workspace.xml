@@ -1,14 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8e98895c-718e-44aa-be31-5cc6fd989333" name="Default Changelist" comment="Initial commit.">
-      <change afterPath="$PROJECT_DIR$/src/coroutines/CancellationPropagationThroughCoroutinesHierarchy.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/coroutines/ClosingResourcesWithFinally.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/coroutines/LazilyStartedAsync.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/coroutines/NonCancelableBlock.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/coroutines/StructuredConcurrencyWithAsync.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/coroutines/withTimeout.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/coroutines/withTimeoutOrNull.kt" afterDir="false" />
+    <list default="true" id="8e98895c-718e-44aa-be31-5cc6fd989333" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -52,9 +45,9 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
-  <component name="RunManager" selected="Kotlin.CancellationPropagationThroughCoroutinesHierarchyKt">
+  <component name="RunManager" selected="Kotlin.LambdaKt">
     <configuration name="AsyncStyleFunctionsKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
       <module name="LearnKotlin" />
       <option name="VM_PARAMETERS" />
@@ -76,6 +69,19 @@
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PASS_PARENT_ENVS" value="true" />
       <option name="MAIN_CLASS_NAME" value="coroutines.CancellationPropagationThroughCoroutinesHierarchyKt" />
+      <option name="WORKING_DIRECTORY" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LambdaKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <module name="LearnKotlin" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" value="LambdaKt" />
       <option name="WORKING_DIRECTORY" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -107,26 +113,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="WithTimeoutOrNullKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <module name="LearnKotlin" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="MAIN_CLASS_NAME" value="coroutines.WithTimeoutOrNullKt" />
-      <option name="WORKING_DIRECTORY" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Kotlin.LambdaKt" />
         <item itemvalue="Kotlin.CancellationPropagationThroughCoroutinesHierarchyKt" />
         <item itemvalue="Kotlin.StructuredConcurrencyWithAsyncKt" />
         <item itemvalue="Kotlin.AsyncStyleFunctionsKt" />
         <item itemvalue="Kotlin.LazilyStartedAsyncKt" />
-        <item itemvalue="Kotlin.WithTimeoutOrNullKt" />
       </list>
     </recent_temporary>
   </component>
@@ -148,22 +141,30 @@
       <option name="project" value="LOCAL" />
       <updated>1584555297516</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="CoroutinesUpdate">
+      <created>1585077338328</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1585077338328</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initial commit." />
-    <option name="LAST_COMMIT_MESSAGE" value="Initial commit." />
+    <MESSAGE value="CoroutinesUpdate" />
+    <option name="LAST_COMMIT_MESSAGE" value="CoroutinesUpdate" />
   </component>
   <component name="WindowStateProjectService">
     <state x="643" y="244" width="624" height="548" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1584979649011">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="643" y="244" width="624" height="548" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1584979649011" />
-    <state x="500" y="67" width="909" height="901" key="CommitChangelistDialog2" timestamp="1585046425683">
+    <state x="500" y="67" width="909" height="901" key="CommitChangelistDialog2" timestamp="1585077338190">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="500" y="67" width="909" height="901" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1585046425683" />
+    <state x="500" y="67" width="909" height="901" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1585077338190" />
     <state x="707" y="402" width="763" height="360" key="Github.ShareDialog" timestamp="1584555139988">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -172,46 +173,46 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="660" y="180" width="590" height="675" key="Github.UntrackedFilesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1584555051621" />
-    <state width="1870" height="350" key="GridCell.Tab.0.bottom" timestamp="1585053476843">
+    <state width="1864" height="335" key="GridCell.Tab.0.bottom" timestamp="1585557549468">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1576688212014" />
-    <state width="1870" height="350" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1585053476843" />
-    <state width="1870" height="350" key="GridCell.Tab.0.center" timestamp="1585053476842">
+    <state width="1864" height="335" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1585557549468" />
+    <state width="1864" height="335" key="GridCell.Tab.0.center" timestamp="1585557549467">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.center/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1576688212014" />
-    <state width="1870" height="350" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1585053476842" />
-    <state width="1870" height="350" key="GridCell.Tab.0.left" timestamp="1585053476842">
+    <state width="1864" height="335" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1585557549467" />
+    <state width="1864" height="335" key="GridCell.Tab.0.left" timestamp="1585557549467">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.left/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1576688212014" />
-    <state width="1870" height="350" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1585053476842" />
-    <state width="1870" height="350" key="GridCell.Tab.0.right" timestamp="1585053476843">
+    <state width="1864" height="335" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1585557549467" />
+    <state width="1864" height="335" key="GridCell.Tab.0.right" timestamp="1585557549468">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.right/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1576688212014" />
-    <state width="1870" height="350" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1585053476843" />
-    <state width="1870" height="337" key="GridCell.Tab.1.bottom" timestamp="1585049378933">
+    <state width="1864" height="335" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1585557549468" />
+    <state width="1870" height="337" key="GridCell.Tab.1.bottom" timestamp="1585077365090">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1870" height="337" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1585049378933" />
-    <state width="1870" height="337" key="GridCell.Tab.1.center" timestamp="1585049378932">
+    <state width="1870" height="337" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1585077365090" />
+    <state width="1870" height="337" key="GridCell.Tab.1.center" timestamp="1585077365090">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1870" height="337" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1585049378932" />
-    <state width="1870" height="337" key="GridCell.Tab.1.left" timestamp="1585049378932">
+    <state width="1870" height="337" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1585077365090" />
+    <state width="1870" height="337" key="GridCell.Tab.1.left" timestamp="1585077365089">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1870" height="337" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1585049378932" />
-    <state width="1870" height="337" key="GridCell.Tab.1.right" timestamp="1585049378933">
+    <state width="1870" height="337" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1585077365089" />
+    <state width="1870" height="337" key="GridCell.Tab.1.right" timestamp="1585077365090">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1870" height="337" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1585049378933" />
-    <state x="555" y="255" width="800" height="526" key="Vcs.Push.Dialog.v2" timestamp="1584555320774">
+    <state width="1870" height="337" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1585077365090" />
+    <state x="209" y="0" width="1491" height="1040" key="SettingsEditor" timestamp="1585479638929">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="555" y="255" width="800" height="526" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1584555320774" />
+    <state x="209" y="0" width="1491" height="1040" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1585479638929" />
+    <state x="555" y="255" width="800" height="526" key="Vcs.Push.Dialog.v2" timestamp="1585077349675">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="555" y="255" width="800" height="526" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1585077349675" />
     <state x="502" y="217" width="906" height="601" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1585049404577">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
