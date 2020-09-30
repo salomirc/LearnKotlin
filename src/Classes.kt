@@ -70,6 +70,37 @@ class Truck(make: String, model: String, var towingCapacity: Int) : Vehicle(make
 
 class SuperTruck(make: String, model: String, var towingCapacity: Int) : Vehicle(make, model)
 
+open class User {
+    init {
+        println("UserClass Init block")
+    }
+    val name: String
+
+    constructor(name: String) {
+        this.name = name
+        println("UserClass SecondaryConstructorOne name = $name")
+    }
+
+    constructor(name: String, age: Int) {
+        this.name = name
+        println("Constructor name, age")
+    }
+}
+
+class Student : User {
+    init {
+        println("StudentClass Init block, name = $name")
+    }
+
+    constructor(name: String) : super(name) {
+        println("StudentClass SecondaryConstructorOne name = $name")
+    }
+
+    constructor(name: String, age: Int) : super(name, age) {
+        println("Constructor name, age")
+    }
+}
+
 fun main() {
 
     val carDemo = CarDemo("Ford", "Fiesta")
@@ -90,5 +121,7 @@ fun main() {
     tesla.accelerate()
     tesla.park()
     tesla.brake()
+
+    val myStudent = Student("Ciprian")
 
 }
