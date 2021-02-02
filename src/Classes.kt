@@ -83,7 +83,7 @@ open class User {
 
     constructor(name: String, age: Int) {
         this.name = name
-        println("Constructor name, age")
+        println("UserClass SecondaryConstructorTwo name = $name, age = $age")
     }
 }
 
@@ -97,8 +97,22 @@ class Student : User {
     }
 
     constructor(name: String, age: Int) : super(name, age) {
-        println("Constructor name, age")
+        println("StudentClass SecondaryConstructorTwo name = $name, age = $age")
     }
+}
+
+
+interface Shape {
+    val vertexCount: Int
+}
+
+//Default value is used only if no value is provided when calling the constructor
+//Can have (any) vertices number accordingly to the value supplied as the constructor argument
+class Rectangle(override val vertexCount: Int = 4) : Shape  // vertexCount can be set only in the constructor call
+//Always has 4 vertices ?? Answer : NO! (Kotlin documentation)
+
+class Polygon : Shape {
+    override var vertexCount: Int = 0  // Can be set to any number later
 }
 
 fun main() {
@@ -123,5 +137,13 @@ fun main() {
     tesla.brake()
 
     val myStudent = Student("Ciprian")
+
+    val defaultValueRectangle = Rectangle()
+    val rectangle = Rectangle(10)
+    val polygon = Polygon().apply { vertexCount = 9 }
+
+    println("defaultValueRectangle vertexCount = ${defaultValueRectangle.vertexCount}")
+    println("Rectangle vertexCount = ${rectangle.vertexCount}")
+    println("Polygon vertexCount = ${polygon.vertexCount}")
 
 }
