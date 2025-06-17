@@ -4,7 +4,7 @@ import java.io.File
 
 fun main() {
 
-    //Create File
+    //Create File and Folder
     val folder = File("./src/files_io_essentials/demo")
     val file = File(folder, "hello.txt")
 
