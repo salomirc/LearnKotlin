@@ -56,8 +56,8 @@ fun main() {
     var contains = str.contains("Force", true)
     println(contains)
 
-    println(str.toUpperCase())
-    println(str.toLowerCase())
+    println(str.uppercase())
+    println(str.lowercase())
 
     var num = 1000
     var stringNum = num.toString()
