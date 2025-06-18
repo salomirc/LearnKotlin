@@ -19,11 +19,12 @@ fun main() {
     inputStream.close()
     println(bytes.decodeToString())
 
-    // Recommended approach
+    // Recommended approach and efficient at the same time! (use buffer read under the hood)
+    // Not recommended for very large files because it needs to load entire file content in memory
     // Safe use of FileInputStream Try/Finally equivalent with close()
     // T must implement Closeable interface, see T.use() method source code
-    FileInputStream(textFile).use {
-        val bytes = it.readBytes()
+    FileInputStream(textFile).use { stream ->
+        val bytes = stream.readBytes()
         val text = bytes.decodeToString()
         println(bytes.toList().toString())
         println(text)
@@ -31,11 +32,11 @@ fun main() {
 
     // Safe use of FileInputStream with low level method read() byte value
     val stringBuilder = StringBuilder()
-    FileInputStream(textFile).use {
-        var byte = it.read()
+    FileInputStream(textFile).use { stream ->
+        var byte = stream.read()
         while (byte != -1) {
             stringBuilder.append(byte.toChar())
-            byte = it.read()
+            byte = stream.read()
         }
     }
     println(stringBuilder.toString())
@@ -44,13 +45,15 @@ fun main() {
     //WRITE
 
     // Safe use of FileOutputStream with method write() byte
+    // Inefficient low level write
     FileOutputStream(countFile).use { outputStream ->
-        repeat(1000) { integer ->
+        repeat(1000000) { integer ->
             outputStream.write("$integer\n".encodeToByteArray())
         }
     }
 
     // Safe use of FileOutputStream with method write() byteArray
+    // Recommended for file content that can be loaded in memory (not very large)
     val text = "Hello"
     val byteArray = text.toByteArray(Charsets.UTF_8)
 //    val byteArray = byteArrayOf(1, 2, 3, 4, 5)
